@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Anim test
+        </title>
+    </head>
+    <body>
+        <h4>(does nothing when you catch)</h4>
+        <h1>
+            
+        </h1>
+        <button>
+        Rainbow And try to catch Me!!!!
+    </button>
+        <style>
+            h1 {
+                animation-name: PositionChanges;
+                animation-duration: 350ms;
+                animation-iteration-count: infinite;
+            }
+            button {
+                animation-name: Test;
+                font-size: 30px;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                color: red;
+                background-color: blueviolet;
+                border-radius: 25px;
+                width: 400px;
+                height: 120px;
+            }
+            @keyframes PositionChanges {
+                10% {height: 100px;}
+            }
+
+            @keyframes Test {
+                  10%   {background-color: blueviolet; color: red;}
+                  20%   {background-color: blue; color: rgb(253, 86, 25);}
+                  30%   {background-color: rgb(0, 164, 219); color: yellow;}
+                  40% {background-color: rgb(0, 143, 0); color: rgb(0, 164, 219);}
+                   50% {background-color: yellow; color: blue;}
+                   60% {background-color: rgb(253, 86, 25); color: blueviolet;}
+                   75% {background-color: red;}
+                }
+        </style>
+        </body>
+</html>
